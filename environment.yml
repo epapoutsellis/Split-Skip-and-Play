@@ -1,0 +1,32 @@
+name: ssp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - "numpy<2.0"
+  - cmake
+  - scipy
+  - six
+  - cython
+  - numba
+  - pillow
+  - jupyterlab
+  - scikit-learn
+  - dask
+  - zarr
+  - pywavelets
+  - astra-toolbox
+  - tqdm
+
+  # Needed so xdesign can import pkg_resources
+  - "setuptools<82"
+
+  # Binder/conda plumbing
+  - pip
+  - ipykernel
+
+  # pip-only deps you listed
+  - pip:
+      - bm3d
+      - xdesign
+      - scikit-image

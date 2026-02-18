@@ -13,7 +13,6 @@ dependencies:
   - cython
   - numba
   - pillow
-  - jupyterlab
   - scikit-learn
   - pywavelets
   - astra-toolbox

@@ -6,20 +6,17 @@ dependencies:
   - "numpy<2.0"
   - "zarr<3"
 
-  # core deps you listed
   - cmake
   - scipy
   - six
   - cython
   - numba
   - pillow
-  - scikit-learn
   - pywavelets
   - astra-toolbox
   - tqdm
   - "setuptools<82"
   - git
-  - make
 
   # pip deps
   - pip

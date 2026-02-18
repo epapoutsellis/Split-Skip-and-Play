@@ -1,0 +1,35 @@
+name: ssp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - "numpy<2.0"
+  - "zarr<3"
+
+  # core deps you listed
+  - cmake
+  - scipy
+  - six
+  - cython
+  - numba
+  - pillow
+  - jupyterlab
+  - scikit-learn
+  - dask
+  - pywavelets
+  - astra-toolbox
+  - tqdm
+  - nb_conda_kernels
+  - "setuptools<82"
+  - git
+  - make
+  - c-compiler
+  - cxx-compiler
+
+  # pip deps
+  - pip
+  - wheel
+  - pip:
+      - bm3d
+      - xdesign
+      - scikit-image

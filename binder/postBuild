@@ -3,6 +3,13 @@ set -euxo pipefail
 
 python -m ipykernel install --user --name ssp --display-name "Python (ssp)"
 
+# Pick the active environment prefix in Binder
+PREFIX="${CONDA_PREFIX:-${NB_PYTHON_PREFIX:-}}"
+if [ -z "${PREFIX}" ]; then
+  PREFIX="$(python -c 'import sys, os; print(os.path.dirname(os.path.dirname(sys.executable)))')"
+fi
+echo "Using PREFIX=${PREFIX}"
+
 if [ ! -d "StochasticCIL" ]; then
   git clone https://github.com/epapoutsellis/StochasticCIL.git
 fi
@@ -11,7 +18,7 @@ cd StochasticCIL
 git fetch --all --tags
 git checkout svrg
 
-# no idea why
+# Ensure annotated tag for `git describe`
 git config user.email "binder@local"
 git config user.name "Binder Build"
 
@@ -30,10 +37,10 @@ cd build
 cmake ../ -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DCONDA_BUILD=OFF \
   -DCMAKE_BUILD_TYPE=Release \
-  -DLIBRARY_LIB="${CONDA_PREFIX}/lib" \
-  -DLIBRARY_INC="${CONDA_PREFIX}" \
-  -DCMAKE_INSTALL_PREFIX="${CONDA_PREFIX}" \
-  -DPython_EXECUTABLE="${CONDA_PREFIX}/bin/python"
+  -DLIBRARY_LIB="${PREFIX}/lib" \
+  -DLIBRARY_INC="${PREFIX}" \
+  -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
+  -DPython_EXECUTABLE="${PREFIX}/bin/python"
 
 make -j"$(nproc)"
 make install

@@ -1,15 +1,21 @@
+---
+title: Split-Skip-and-Play
+sdk: docker
+app_port: 7860
+---
+
 # Split-Skip-and-Play
 
-Code to reproduce results for paper ["SPLIT, SKIP AND PLAY: VARIANCE-REDUCED PROXSKIP FOR TOMOGRAPHY
-RECONSTRUCTION IS EXTREMELY FAST"](https://arxiv.org/abs/2602.09527) by Evangelos Papoutsellis, Zeljko Kereta, Kostas Papafitsoros. This is an extension of the paper ["Why do we regularise in every iteration for imaging inverse problems?"](https://arxiv.org/abs/2411.00688).
+![](data/img.png)
 
-![](PnP_BM3D_1min_reconstruction.gif)
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/epapoutsellis/Split-Skip-and-Play/HEAD)  
+Code to reproduce results for paper ["SPLIT, SKIP AND PLAY: VARIANCE-REDUCED PROXSKIP FOR TOMOGRAPHY RECONSTRUCTION IS EXTREMELY FAST"](https://arxiv.org/abs/2602.09527) by Evangelos Papoutsellis, Zeljko Kereta, Kostas Papafitsoros. This is an extension of the paper ["Why do we regularise in every iteration for imaging inverse problems?"](https://arxiv.org/abs/2411.00688).
 
 ### Abstract
 Many modern iterative solvers for large-scale tomographic reconstruction incur two major computational costs per iteration: expensive forward/adjoint projections to update the data fidelity term and costly proximal computations for the regulariser, often done via inner iterations. This paper studies for the first time the application of methods that couple randomised skipping of the proximal with variance-reduced subset-based optimisation of data-fit term, to simultaneously reduce both costs in challenging tomographic reconstruction tasks. We provide a series of experiments using both synthetic and real data, demonstrating striking speed-ups of the order 5x--20x compared to the non-skipped counterparts which have been so far the standard approach for efficiently solving these problems. Our work lays the groundwork for broader adoption of these methods in inverse problems.
 
+![](PnP_BM3D_1min_reconstruction.gif)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/epapoutsellis/Split-Skip-and-Play/HEAD)  
 
 ### Installation
 

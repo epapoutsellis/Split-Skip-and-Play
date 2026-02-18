@@ -13,7 +13,7 @@ Many modern iterative solvers for large-scale tomographic reconstruction incur t
 
 ### Installation
 
-We use the [Core Imaging Library (CIL)](https://github.com/TomographicImaging/CIL) with some additional [new functionalities](#Appendix). Code and installation tested on macOS (Apple M2 Pro), Linux, and Windows 10.
+We use the [Core Imaging Library (CIL)](https://github.com/TomographicImaging/CIL) with some additional [new functionalities](#Appendix). Code and installation tested on macOS (Apple M2 Pro), Linux.
 
 ```
 conda create --name ssp -c conda-forge python=3.12 "numpy<2.0" cmake scipy six cython numba pillow jupyterlab scikit-learn dask "zarr<3" pywavelets astra-toolbox tqdm nb_conda_kernels

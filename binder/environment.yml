@@ -15,16 +15,12 @@ dependencies:
   - pillow
   - jupyterlab
   - scikit-learn
-  - dask
   - pywavelets
   - astra-toolbox
   - tqdm
-  - nb_conda_kernels
   - "setuptools<82"
   - git
   - make
-  - c-compiler
-  - cxx-compiler
 
   # pip deps
   - pip

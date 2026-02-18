@@ -1,9 +1,3 @@
----
-title: Split-Skip-and-Play
-sdk: docker
-app_port: 7860
----
-
 # Split-Skip-and-Play
 
 ![](data/img.png)

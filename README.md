@@ -5,10 +5,11 @@ RECONSTRUCTION IS EXTREMELY FAST"](https://arxiv.org/abs/2602.09527) by Evangelo
 
 ![](PnP_BM3D_1min_reconstruction.gif)
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/epapoutsellis/Split-Skip-and-Play/HEAD)  
+
 ### Abstract
 Many modern iterative solvers for large-scale tomographic reconstruction incur two major computational costs per iteration: expensive forward/adjoint projections to update the data fidelity term and costly proximal computations for the regulariser, often done via inner iterations. This paper studies for the first time the application of methods that couple randomised skipping of the proximal with variance-reduced subset-based optimisation of data-fit term, to simultaneously reduce both costs in challenging tomographic reconstruction tasks. We provide a series of experiments using both synthetic and real data, demonstrating striking speed-ups of the order 5x--20x compared to the non-skipped counterparts which have been so far the standard approach for efficiently solving these problems. Our work lays the groundwork for broader adoption of these methods in inverse problems.
 
-**Quick Demo**:    
 
 ### Installation
 

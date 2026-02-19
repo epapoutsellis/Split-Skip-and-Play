@@ -10,7 +10,7 @@ Many modern iterative solvers for large-scale tomographic reconstruction incur t
 ![](PnP_BM3D_1min_reconstruction.gif)
 
 
-**Quick Demo**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/epapoutsellis/Split-Skip-and-Play/HEAD) [![PnP-BM3D-VR-Skip (GoogleColab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/epapoutsellis/Split-Skip-and-Play/blob/main/gcolab/PnP_BM3D_VR_Skip.ipynb)
+**Quick Demo**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/epapoutsellis/Split-Skip-and-Play/HEAD/?labpath=PnP_BM3D_VR_Skip.ipynb) [![PnP-BM3D-VR-Skip (GoogleColab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/epapoutsellis/Split-Skip-and-Play/blob/main/gcolab/PnP_BM3D_VR_Skip.ipynb)
 
 *Note:* **Different OS, different runtimes (Binder/Colab specs are limited). But we always have the same winning algorithm.**
 

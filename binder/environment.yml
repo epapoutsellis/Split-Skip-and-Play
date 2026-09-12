@@ -1,6 +1,8 @@
 name: ssp
+
 channels:
   - conda-forge
+
 dependencies:
   - python=3.12
   - "numpy<2.0"
@@ -15,9 +17,12 @@ dependencies:
   - astra-toolbox
   - tqdm
   - "setuptools<82"
-  - pip
   - wheel
+
+  # Install these with conda, not pip
+  - xdesign
+  - scikit-image
+
+  - pip
   - pip:
-      - bm3d
-      - xdesign
-      - scikit-image
+      - bm3d==4.0.3
